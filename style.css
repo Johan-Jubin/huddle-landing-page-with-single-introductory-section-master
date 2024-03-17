@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --violet:hsl(257, 40%, 49%);
+    --soft-magenta:hsl(300, 69%, 71%);
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin:0% 4%;
+    background-color: var(--violet);
+    background-image:url("/images/bg-desktop.svg");
+    background-repeat: no-repeat;
+}
+header{
+    display: flex;
+    justify-content: flex-start;
+    margin:50px 0% 100px 0%;
+}
+.logo{
+    width:200px;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    /* gap:2.5rem; */
+}
+.product-bio{
+    padding:3% 5%;
+    color:white;
+    font-family: "Poppins",sans-serif;
+}
+.punchline{
+    padding-right:10%;
+    font-size: 2.5em;
+    font-weight:600;
+    padding-bottom: 4%;
+}
+.desc{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    padding-bottom:7%;
+}
+button{
+    width:200px;
+    padding:2%;
+    border-radius: 25px;
+    color:var(--violet);
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.493);
+}
+button:hover{
+    background-color: var(--soft-magenta);
+    color:white;
+    cursor:pointer;
+}
+footer{
+    display: flex;
+    justify-content:flex-end;
+    margin-bottom: 1%;
+    color: white;
+}
+i{
+    border-radius: 50%;
+    border: 1px solid white;
+    padding:8px;
+    margin:0 .75em;
+}
+i:hover{
+    border:1px solid var(--soft-magenta);
+    color: var(--soft-magenta);
+    cursor:pointer;
+}
+@media (max-width:900px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+    .punchline{
+        font-size: 2em;
+    }
+    .desc{
+        line-height: 30px;
+    }
+    .product img{
+        width: 80vw;
+        margin-bottom: 10%;
+    }
+}
